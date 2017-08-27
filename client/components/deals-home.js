@@ -32,7 +32,7 @@ class DealsHome extends Component {
         <tr key={`${deal.id}_${deal.title}`}>
           <td>{idx + 1}</td>
           <td>{deal.title}</td>
-          <td>{deal.doamin}</td>
+          <td>{deal.domain}</td>
         </tr>
       )
     })
