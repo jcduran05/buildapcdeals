@@ -12,8 +12,8 @@
     "deploy": "git checkout -b deploy && webpack -p && git add -f public/bundle.js public/bundle.js.map && git commit --allow-empty -m 'Deploying' && git push --force heroku deploy:master && git checkout master && git branch -D deploy",
     "start": "node server",
     "start-dev": "npm run build-client-watch & npm run start-server",
-    "start-server": "cross-env NODE_ENV='development' nodemon server -e html,js,scss --ignore public",
-    "test": "cross-env NODE_ENV='test' DATABASE_URL='postgres://localhost:5432/boilermaker-test' mocha ./**/*.spec.js --compilers js:babel-register"
+    "start-server": "cross-env NODE_ENV=development nodemon server -e html,js,scss --ignore public",
+    "test": "cross-env NODE_ENV=test DATABASE_URL='postgres://localhost:5432/boilermaker-test' mocha ./**/*.spec.js --compilers js:babel-register"
   },
   "author": "Juan Duran",
   "license": "ISC",
