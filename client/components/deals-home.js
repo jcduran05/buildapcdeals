@@ -38,17 +38,17 @@ class DealsHome extends Component {
     })
 
     return (
-      <div className="col-md-12">
+      <div className="col-md-12 col-sm-12">
         <div className="table-responsive">
-          <table className="table table-striped">
-            <thead>
+          <table className="table table-sm">
+            <thead className="">
               <tr>
                 <th>#</th>
                 <th>Title</th>
                 <th>Domain</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="table-hover">
               {dealsArr}
             </tbody>
           </table>

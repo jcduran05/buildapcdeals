@@ -15,23 +15,14 @@ const Main = (props) => {
 
   return (
     <div>
-      <h1>BOILERMAKER</h1>
-      <nav>
-        {
-          isLoggedIn
-            ? <div>
-              {/* The navbar will show these links after you log in */}
-              <Link to='/home'>Home</Link>
-              <a href='#' onClick={handleClick}>Logout</a>
-            </div>
-            : <div>
-              {/* The navbar will show these links before you log in */}
-              <Link to='/login'>Login</Link>
-              <Link to='/signup'>Sign Up</Link>
-            </div>
-        }
-      </nav>
-      <hr />
+      <div className="navbar navbar-dark bg-dark">
+        <div className="container d-flex justify-content-between">
+          <a href="#" className="navbar-brand">
+            <img src="/custompcpixel.png" width="35px" alt=""/>
+            &nbsp;&nbsp;Custom PC Deals
+          </a>
+        </div>
+      </div>
       {children}
     </div>
   )
